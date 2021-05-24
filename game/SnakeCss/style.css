@@ -1,8 +1,12 @@
-
+h2 {
+	position: absolute;
+	top: 20px;
+}
 #map {
 	width: 800px;
 	height: 600px;
 	background-color: lightgrey;
 	position: relative;
+	top: 30px;
 	margin: 0 auto;
 }

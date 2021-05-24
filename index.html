@@ -1,117 +1,72 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <script src="plugIn/jQuery.js"></script>
-    <style>
-		body {
-			width: 600px;
-			margin: 0 auto;
-		}
-		h2 {
-			text-align: center;
-		}
-		
-		 /* 轮播图 */
-        a,
-        ul,
-        li {
-            list-style: none;
-            text-decoration: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        .wrap {
-            width: 600px;
-            height: 400px;
-            margin: 60px auto;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .navs {
-            width: 4200px;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: -600px;
-            /* border: 1px solid red; */
-        }
-
-        .navs li {
-            width: 600px;
-            height: 100%;
-            float: left;
-        }
-
-        .navs li img {
-            width: 100%;
-            height: 100%;
-        }
-
-        #bots {
-            display: inline-block;
-            width: 600px;
-            height: 40px;
-            background: rgba(0, 0, 0, .3);
-            text-align: center;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-        }
-
-        #bots li {
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            background: #cccccc;
-            position: relative;
-            left: 220px;
-            top: 10px;
-            margin-left: 10px;
-            float: left;
-        }
-
-        #bots .active {
-            background: red;
-        }
-    </style>
+    <title>个人网</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/jQuery.js"></script>
+    <script src="js/show.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
 </head>
-
 <body>
-	<h2>~欢~迎~来~到~我~的~世~界~</h2>
-    <div class="wrap" id="box">		
-        <ul id='navs' class="navs">
-            <li><a href="javascript:;"><img src="images/ban5.jpg" /></a></li>
-            <li><a href="javascript:;"><img src="images/ban1.jpg" /></a></li>
-            <li><a href="javascript:;"><img src="images/ban2.jpg" /></a></li>
-            <li><a href="javascript:;"><img src="images/ban3.jpg" /></a></li>
-            <li><a href="javascript:;"><img src="images/ban4.jpg" /></a></li>
-            <li><a href="javascript:;"><img src="images/ban5.jpg" /></a></li>
-            <li><a href="javascript:;"><img src="images/ban1.jpg" /></a></li>
-        </ul>
-        <ul id="bots">
-            <li class="bot active"></li>
-            <li class="bot"></li>
-            <li class="bot"></li>
-            <li class="bot"></li>
-            <li class="bot"></li>
-        </ul>
+    <!-- 头部模块 -->
+    <div class="head">
+        <!-- 欢迎词 -->
+        <h2 class="">欢迎您的访问</h2>
+        <!-- 导航栏 -->
+        <div class="nav">
+            <!-- 上部导航栏 -->
+            <ul id="main">
+                <li><a href="index.html">主页</a></li>
+                <li><a href="writing.html">个人介绍</a></li>
+                <li><a href="">经典小游戏</a></li>                                 
+                <li><a href="writing.html">留言</a></li>               
+            </ul>
+            <!-- 游戏下拉框 -->
+            <div id="game">
+                <ul>
+                    <li><a href="game/Snake.html">贪吃蛇</a></li>
+                    <li><a href="game/Tetris.html">俄罗斯方块</a></li>
+                    <li><a href="game/My2048.html">我的2048</a></li>
+                    <li><a href="writing.html" target="view_window">正在开发中...</a></li>
+                </ul>
+            </div>    
+        </div>
     </div>
-	<div id="box">
-		<a href="./game/Tetris.html">俄罗斯方块</a>
-		<a href="./game/Snake.html">贪吃蛇</a>
-	</div>
+    <!-- 主体模块 -->
+    <div>
+        <!-- 轮播图 -->
+        <div class="wrap" id="box">     
+            <ul id='navs' class="navs">
+                <li><a href="javascript:;"><img src="images/ban5.jpg" /></a></li>
+                <li><a href="javascript:;"><img src="images/ban1.jpg" /></a></li>
+                <li><a href="javascript:;"><img src="images/ban2.jpg" /></a></li>
+                <li><a href="javascript:;"><img src="images/ban3.jpg" /></a></li>
+                <li><a href="javascript:;"><img src="images/ban4.jpg" /></a></li>
+                <li><a href="javascript:;"><img src="images/ban5.jpg" /></a></li>
+                <li><a href="javascript:;"><img src="images/ban1.jpg" /></a></li>
+            </ul>
+            <ul id="bots">
+                <li class="bot active"></li>
+                <li class="bot"></li>
+                <li class="bot"></li>
+                <li class="bot"></li>
+                <li class="bot"></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 底部模块 -->
+    <div class="footer">
+        <p>本网站仅供娱乐使用，资料来着网络</p>
+       
+    </div>
     <script>
-        // 业务逻辑   触发了一个定时器
-        // 1.图片不断出现/隐藏  不断向左侧移动
-        // 2.对应的小圆点背景颜色变红
+        // <!-- 游戏导航栏下拉框 -->
+        $('#main>li:eq(2)').mouseover(function() {
+            $('#game').css({display: 'block'});
+        });
+        
+        //  jquery 实现轮播图
         let num = 1;
         let i = 0;
         let timer = null;
@@ -125,10 +80,10 @@
                 if (num > 6) {
                     // num = 6的时候，其实显示  ban1  
                     // 应该通过样式赋值的形式，直接变为 真正的 ban1
-                    $("#navs").css('left', -600)
+                    $("#navs").css('left', -800)
                     num = 2;
                 }
-                $("#navs").animate({ left: -num * 600 }, 500);
+                $("#navs").animate({ left: -num * 800 }, 500);
 
                 // 2.小圆点功能
                 i++;
@@ -137,22 +92,8 @@
                 }
                 $("#bots li").eq(i).addClass('active').siblings().removeClass('active');
 
-            }, 2000);
+            }, 2500);
         }
-
-
-
-        // 鼠标移入 清除定时器
-        $(".wrap").mouseover(() => {
-            clearInterval(timer);
-        });
-
-        // 鼠标移出 开启定时器
-        $(".wrap").mouseout(() => {
-            swiper();
-        });
-
     </script>
 </body>
-
 </html>
