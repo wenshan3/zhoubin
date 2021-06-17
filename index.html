@@ -5,7 +5,12 @@
     <title>个人网</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="js/jQuery.js"></script>
+    <!-- 游戏下拉框代码 -->
+    <script src="js/index.js"></script>
+    <!-- 标题文字效果 -->
     <script src="js/show.js"></script>
+    <!-- 背景下雨效果 -->
+    <script src="js/rain.js"></script>
     <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
 </head>
 <body>
@@ -15,22 +20,23 @@
         <h2 class="">欢迎您的访问</h2>
         <!-- 导航栏 -->
         <div class="nav">
-            <!-- 上部导航栏 -->
             <ul id="main">
                 <li><a href="index.html">主页</a></li>
-                <li><a href="writing.html">个人介绍</a></li>
-                <li><a href="">经典小游戏</a></li>                                 
-                <li><a href="writing.html">留言</a></li>               
-            </ul>
-            <!-- 游戏下拉框 -->
-            <div id="game">
-                <ul>
-                    <li><a href="game/Snake.html">贪吃蛇</a></li>
-                    <li><a href="game/Tetris.html">俄罗斯方块</a></li>
-                    <li><a href="game/My2048.html">我的2048</a></li>
-                    <li><a href="writing.html" target="view_window">正在开发中...</a></li>
-                </ul>
-            </div>    
+                <li><a href="show/index.html" target="_blank">个人介绍</a></li>
+                <li style="width: 175px; height: 46px;">
+                    <a href="">经典小游戏</a>
+                    <!-- 游戏下拉框 -->
+                    <div id="game">
+                        <ul>
+                            <li><a href="game/Snake.html" target="_blank">贪吃蛇</a></li>
+                            <li><a href="game/Tetris.html" target="_blank">俄罗斯方块</a></li>
+                            <li><a href="game/My2048.html" target="_blank">我的2048</a></li>
+                            <li><a href="writing.html" target="_blank">正在开发中...</a></li>
+                        </ul>
+                    </div>
+                </li>                                 
+                <li><a href="weather/index.html" target="_blank">天气情况</a></li>               
+            </ul>               
         </div>
     </div>
     <!-- 主体模块 -->
@@ -57,43 +63,7 @@
     </div>
     <!-- 底部模块 -->
     <div class="footer">
-        <p>本网站仅供娱乐使用，资料来着网络</p>
-       
+        <p>本网站仅供娱乐使用，资料部分来着网络</p>      
     </div>
-    <script>
-        // <!-- 游戏导航栏下拉框 -->
-        $('#main>li:eq(2)').mouseover(function() {
-            $('#game').css({display: 'block'});
-        });
-        
-        //  jquery 实现轮播图
-        let num = 1;
-        let i = 0;
-        let timer = null;
-        swiper();
-        // 把定时器功能做一个函数封装
-        function swiper() {
-            timer = setInterval(() => {
-                // 1、图片功能
-                num++;
-                // 设置条件 当num大于6，num=2
-                if (num > 6) {
-                    // num = 6的时候，其实显示  ban1  
-                    // 应该通过样式赋值的形式，直接变为 真正的 ban1
-                    $("#navs").css('left', -800)
-                    num = 2;
-                }
-                $("#navs").animate({ left: -num * 800 }, 500);
-
-                // 2.小圆点功能
-                i++;
-                if (i > 4) {
-                    i = 0;
-                }
-                $("#bots li").eq(i).addClass('active').siblings().removeClass('active');
-
-            }, 2500);
-        }
-    </script>
 </body>
 </html>

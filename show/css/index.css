@@ -1,0 +1,120 @@
+body {
+	background-color: #E1EAF1;
+}
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+.box {
+	width: 1200px;
+	margin: 0 auto;
+}
+.left {
+	float: left;
+	width: 300px;
+	height: 750px;
+	background-color: #fff;
+}
+.left .pic {
+	width: 150px;
+	height: 150px;
+	color: #E1EAF1;
+	border-radius: 50%;
+	background-color: #E3F8F9;
+	margin: 20px auto;
+	line-height: 150px;
+	text-align: center;
+	font-size: 10px;
+	color: #fff;
+}
+.info h2 {
+	height: 40px;
+	line-height: 40px;
+	color: #fff;
+	text-align: center;
+	background-color: #252F4A;
+}
+.info table {
+	margin: 0 auto;
+	font-size: 18px;
+}
+.skill {
+	padding: 0 15px;
+	overflow: hidden;
+}
+.skill-left p {
+	height: 16px;
+}
+.skill-right span {
+	display: block;
+	width: 170px;
+	height: 20px;
+	background-color: #E1EAF1;
+	margin-top: 14px;
+}
+.skill-right span:first-child::after  {
+	content: "";
+	width: 90%;
+	height: 20px;
+	display:inline-block;
+	background-color: #1FBA99;			
+}
+.skill-right span:nth-child(2)::after  {
+	content: "";
+	width: 85%;
+	height: 20px;
+	display:inline-block;
+	background-color: #1FBA99;			
+}
+.skill-right span:nth-child(3)::after  {
+	content: "";
+	width: 80%;
+	height: 20px;
+	display:inline-block;
+	background-color: #1FBA99;			
+}
+.skill-right span:nth-child(4)::after  {
+	content: "";
+	width: 70%;
+	height: 20px;
+	display:inline-block;
+	background-color: #1FBA99;			
+}
+.skill-right span:last-child::after  {
+	content: "";
+	width: 60%;
+	height: 20px;
+	display:inline-block;
+	background-color: #1FBA99;			
+}
+.hr {
+	border-bottom: 15px solid #252F4A;
+	margin-top: 20px;
+}
+.right {
+	float: right;
+	width: 800px;
+	height: 1400px;
+	background-color: #E3F8F9;
+	padding: 10px 30px;
+	font-size: 18px;
+}
+/*.right h2:first-child::before {
+	content: "&#xe661;";
+	/*height: 30px;
+}*/
+.right h2 > p, .right h2 > span {
+	/*display: inline-block;*/
+	color: blue;
+} 
+.education ul li:nth-child(3) span {
+	font-weight: bold;
+	color: red;
+}
+.hope > p {
+	text-indent: 2em;
+	font-weight: bold;
+	color: red;
+}

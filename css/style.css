@@ -8,11 +8,14 @@ li {
 a {
 	text-decoration: none;
 }
+body {
+  background: url(../images/bj.jpg) no-repeat;
+  background-size: 100%;
+}
 
 /* 头部模块 */
 .head {
 	height: 100%;
-	background-color: #66677c;
 }
 .head h2 {
 	color: rgb(213, 214, 226);
@@ -23,20 +26,20 @@ a {
 }
 .nav {
   position: relative;
-	width: 650px;
-	height: 100px;
+	width: 750px;
+	height: 80px;
 	margin: 50px auto;
 }
-#main li {
+#main>li {
 	float: left;
 	height: 20px;
 	padding: 0 20px;
 }
-#main li a {
+#main>li>a {
 	font-size: 35px;
 }
-#main li a:hover,
-#game li a:hover {
+
+#main a:hover {
   color: blue;
 }
 #game {
@@ -44,17 +47,19 @@ a {
   top: 60px;
   left: 300px;
   width: 200px;
-  height: 300px;
-  background-color: #6BBE92;
+  height: 280px;
+  background-color: #ECC9B6;
   display: none;
   z-index: 100;
+  padding-top: 10px;
+  border-radius: 10px;
 }
 #game li {
   height: 70px;
   text-align: center;
 }
 #game a {
-  font-size: 32px;
+  font-size: 28px;
 }
 
 /*<!-- 主体模块 -->
@@ -108,8 +113,12 @@ a {
 }
 
 /* 底部模块 */
+.footer {
+  position: relative;
+}
 .footer p {
   position: absolute;
-  bottom: 30px;
+  top: 30px;
   left: 40%;
+  color: #fff;
 }
