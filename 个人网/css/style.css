@@ -1,0 +1,124 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+body {
+  background: url(../images/bj.jpg) no-repeat;
+  background-size: 100%;
+}
+
+/* 头部模块 */
+.head {
+	height: 100%;
+}
+.head h2 {
+	color: rgb(213, 214, 226);
+  font-weight: 600;
+  font-size: 50px;
+  text-align: center;
+  padding: 20px 0;
+}
+.nav {
+  position: relative;
+	width: 750px;
+	height: 80px;
+	margin: 50px auto;
+}
+#main>li {
+	float: left;
+	height: 20px;
+	padding: 0 20px;
+}
+#main>li>a {
+	font-size: 35px;
+}
+
+#main a:hover {
+  color: blue;
+}
+#game {
+  position: absolute;
+  top: 60px;
+  left: 300px;
+  width: 200px;
+  height: 280px;
+  background-color: #ECC9B6;
+  display: none;
+  z-index: 100;
+  padding-top: 10px;
+  border-radius: 10px;
+}
+#game li {
+  height: 70px;
+  text-align: center;
+}
+#game a {
+  font-size: 28px;
+}
+
+/*<!-- 主体模块 -->
+<!-- 轮播图 -->*/
+.wrap {
+  width: 800px;
+  height: 500px;
+  margin: 20px auto;
+  position: relative;
+  overflow: hidden;
+}
+.navs {
+  width: 5600px;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: -800px;
+}
+.navs li {          
+  width: 800px;
+  height: 100%;
+  float: left;
+ }
+.navs li img {
+  width: 800px;
+  height: 500px;
+}
+#bots {
+  display: inline-block;
+  width: 800px;
+  height: 40px;
+  background: rgba(0, 0, 0, .3);
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+#bots li {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #cccccc;
+  position: relative;
+  left: 300px;
+  top: 10px;
+  margin-left: 10px;
+  float: left;
+}
+#bots .active {
+  background: red;
+}
+
+/* 底部模块 */
+.footer {
+  position: relative;
+}
+.footer p {
+  position: absolute;
+  top: 30px;
+  left: 40%;
+  color: #fff;
+}

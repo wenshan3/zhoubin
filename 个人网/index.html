@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人网</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/jQuery.js"></script>
+    <!-- 游戏下拉框代码 -->
+    <script src="js/index.js"></script>
+    <!-- 标题文字效果 -->
+    <script src="js/show.js"></script>
+    <!-- 背景下雨效果 -->
+    <script src="js/rain.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
+</head>
+<body>
+    <!-- 头部模块 -->
+    <div class="head">
+        <!-- 欢迎词 -->
+        <h2 class="">欢迎您的访问</h2>
+        <!-- 导航栏 -->
+        <div class="nav">
+            <ul id="main">
+                <li><a href="index.html">主页</a></li>
+                <li><a href="show/index.html" target="_blank">个人介绍</a></li>
+                <li style="width: 175px; height: 46px;">
+                    <a href="">经典小游戏</a>
+                    <!-- 游戏下拉框 -->
+                    <div id="game">
+                        <ul>
+                            <li><a href="game/Snake.html" target="_blank">贪吃蛇</a></li>
+                            <li><a href="game/Tetris.html" target="_blank">俄罗斯方块</a></li>
+                            <li><a href="game/My2048.html" target="_blank">我的2048</a></li>
+                            <li><a href="writing.html" target="_blank">正在开发中...</a></li>
+                        </ul>
+                    </div>
+                </li>                                 
+                <li><a href="weather/index.html" target="_blank">天气情况</a></li>               
+            </ul>               
+        </div>
+    </div>
+    <!-- 主体模块 -->
+    <div>
+        <!-- 轮播图 -->
+        <div class="wrap" id="box">     
+            <ul id='navs' class="navs">
+                <li><a href="javascript:;"><img src="images/ban5.jpg" /></a></li>
+                <li><a href="javascript:;"><img src="images/ban1.jpg" /></a></li>
+                <li><a href="javascript:;"><img src="images/ban2.jpg" /></a></li>
+                <li><a href="javascript:;"><img src="images/ban3.jpg" /></a></li>
+                <li><a href="javascript:;"><img src="images/ban4.jpg" /></a></li>
+                <li><a href="javascript:;"><img src="images/ban5.jpg" /></a></li>
+                <li><a href="javascript:;"><img src="images/ban1.jpg" /></a></li>
+            </ul>
+            <ul id="bots">
+                <li class="bot active"></li>
+                <li class="bot"></li>
+                <li class="bot"></li>
+                <li class="bot"></li>
+                <li class="bot"></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 底部模块 -->
+    <div class="footer">
+        <p>本网站仅供娱乐使用，资料部分来着网络</p>      
+    </div>
+</body>
+</html>
